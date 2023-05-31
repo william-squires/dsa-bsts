@@ -344,17 +344,17 @@ describe("findRecursively", function () {
   });
 });
 
-// describe("dfsPreOrder", function () {
-//   it("returns an array of values found with DFS Pre Order(small)", function () {
-//     expect(smallBST.dfsPreOrder()).toEqual([10, 20]);
-//   });
-//   it("returns an array of values found with DFS Pre Order(large)", function () {
-//     expect(largeBST.dfsPreOrder()).toEqual([50, 25, 10, 15, 40, 75, 100]);
-//   });
-//   it("returns an array of values found with DFS Pre Order(empty)", function () {
-//     expect(emptyBST.dfsPreOrder()).toEqual([]);
-//   });
-// });
+describe("dfsPreOrder", function () {
+  it("returns an array of values found with DFS Pre Order(small)", function () {
+    expect(smallBST.dfsPreOrder()).toEqual([10, 20]);
+  });
+  it("returns an array of values found with DFS Pre Order(large)", function () {
+    expect(largeBST.dfsPreOrder()).toEqual([50, 25, 10, 15, 40, 75, 100]);
+  });
+  it("returns an array of values found with DFS Pre Order(empty)", function () {
+    expect(emptyBST.dfsPreOrder()).toEqual([]);
+  });
+});
 
 // describe("dfsInOrder", function () {
 //   it("returns an array of values found with DFS In Order(small)", function () {

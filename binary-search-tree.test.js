@@ -431,17 +431,17 @@ describe("dfsPostOrder", function () {
 //   });
 // });
 
-// describe("bfs", function () {
-//   it("returns an array of values found with BFS(small)", function () {
-//     expect(smallBST.bfs()).toEqual([10, 20]);
-//   });
-//   it("returns an array of values found with BFS (large)", function () {
-//     expect(largeBST.bfs()).toEqual([50, 25, 75, 10, 40, 100, 15]);
-//   });
-//   it("returns an array of values found with BFS(empty)", function () {
-//     expect(emptyBST.bfs()).toEqual([]);
-//   });
-// });
+describe("bfs", function () {
+  it("returns an array of values found with BFS(small)", function () {
+    expect(smallBST.bfs()).toEqual([10, 20]);
+  });
+  it("returns an array of values found with BFS (large)", function () {
+    expect(largeBST.bfs()).toEqual([50, 25, 75, 10, 40, 100, 15]);
+  });
+  it("returns an array of values found with BFS(empty)", function () {
+    expect(emptyBST.bfs()).toEqual([]);
+  });
+});
 
 // describe("findSuccessorNode", function () {
 //   it("finds successor in small tree", function () {

@@ -93,10 +93,8 @@ class Node {
       _traverse(node.right);
       arr.push(node.val);
     }
-
     _traverse(this);
     return arr;
-
   }
 
 }
@@ -202,7 +200,20 @@ class BinarySearchTree {
    * Returns an array of visited nodes. */
 
   bfs() {
+    const queue = this.root ? [this.root] : [];
+    const vals = [];
 
+    while (queue.length) {
+      let node = queue.shift();
+      vals.push(node.val);
+      if (node.left) {
+        queue.push(node.left);
+      } 
+      if (node.right) {
+        queue.push(node.right);
+      }
+    }
+    return vals;
   }
 
   /** findSuccessorNode(node): Find and return node with next largest value.

@@ -18,7 +18,24 @@ class Node {
    * into the BST with value val. Returns the inserted node. Uses recursion. */
 
   insertRecursively(val) {
+    const newNode = new Node(val);
 
+    if (val < this.val){
+      if (this.left) {
+        return this.left.insertRecursively(val);
+      } else {
+        this.left = newNode;
+        return this;
+      }
+    }
+    if (val > this.val) {
+      if (this.right) {
+        return this.right.insertRecursively(val);
+      } else {
+        this.right = newNode;
+        return this;
+      }
+    }
   }
 
   /** dfsPreOrder(): Traverse from the invoking node using pre-order DFS.
@@ -76,17 +93,19 @@ class BinarySearchTree {
           curr.right = newNode;
           return this;
         }
-
       }
     }
-
   }
 
   /** insertRecursively(val): Insert a new node into the BST with value val.
    * Returns the tree instance. Uses recursion. */
 
   insertRecursively(val) {
-
+    if (this.root) {
+      return this.root.insertRecursively(val);
+    } else {
+      this.root = new Node(val);
+    }
   }
 
   /** find(val): Search the BST for a node with value val.

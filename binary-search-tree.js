@@ -68,7 +68,17 @@ class Node {
   * Returns an array of visited nodes. */
 
   dfsInOrder() {
+    const arr = [];
 
+    function _traverse(node) {
+      if (!node) return;
+      _traverse(node.left);
+      arr.push(node.val);
+      _traverse(node.right);
+    }
+
+    _traverse(this);
+    return arr;
   }
 
   /** dfsPostOrder(): Traverse from the invoking node using post-order DFS.
@@ -160,14 +170,14 @@ class BinarySearchTree {
    * Returns an array of visited nodes. */
 
   dfsPreOrder() {
-    return (this.root) ?this.root.dfsPreOrder() : [];
+    return (this.root) ? this.root.dfsPreOrder() : [];
   }
 
   /** dfsInOrder(): Traverse the BST using in-order DFS.
    * Returns an array of visited nodes. */
 
   dfsInOrder() {
-
+    return (this.root) ? this.root.dfsInOrder() : [];
   }
 
   /** dfsPostOrder(): Traverse the BST using post-order DFS.

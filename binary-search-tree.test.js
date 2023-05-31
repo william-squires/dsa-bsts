@@ -356,20 +356,20 @@ describe("dfsPreOrder", function () {
   });
 });
 
-// describe("dfsInOrder", function () {
-//   it("returns an array of values found with DFS In Order(small)", function () {
-//     expect(smallBST.dfsInOrder()).toEqual([10, 20]);
-//   });
+describe("dfsInOrder", function () {
+  it("returns an array of values found with DFS In Order(small)", function () {
+    expect(smallBST.dfsInOrder()).toEqual([10, 20]);
+  });
 
-//   it("returns an array of values found with DFS In Order(large)", function () {
-//     expect(largeBST.dfsInOrder()).toEqual([10, 15, 25, 40, 50, 75, 100]);
-//   });
+  it("returns an array of values found with DFS In Order(large)", function () {
+    expect(largeBST.dfsInOrder()).toEqual([10, 15, 25, 40, 50, 75, 100]);
+  });
 
-//   it("returns an array of values found with DFS In Order(empty)", function () {
-//     console.log("About to run dfs in order on empty table");
-//     expect(emptyBST.dfsInOrder()).toEqual([]);
-//   });
-// });
+  it("returns an array of values found with DFS In Order(empty)", function () {
+    console.log("About to run dfs in order on empty table");
+    expect(emptyBST.dfsInOrder()).toEqual([]);
+  });
+});
 
 // describe("dfsInOrderWithHelper", function () {
 //   it("returns an array of values found with DFS In Order(small)", function () {

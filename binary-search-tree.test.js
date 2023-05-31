@@ -405,17 +405,17 @@ describe("dfsInOrder", function () {
 //   });
 // });
 
-// describe("dfsPostOrder", function () {
-//   it("returns an array of values found with DFS Post Order(small)", function () {
-//     expect(smallBST.dfsPostOrder()).toEqual([20, 10]);
-//   });
-//   it("returns an array of values found with DFS Post Order(large)", function () {
-//     expect(largeBST.dfsPostOrder()).toEqual([15, 10, 40, 25, 100, 75, 50]);
-//   });
-//   it("returns an array of values found with DFS Post Order(empty)", function () {
-//     expect(emptyBST.dfsPostOrder()).toEqual([]);
-//   });
-// });
+describe("dfsPostOrder", function () {
+  it("returns an array of values found with DFS Post Order(small)", function () {
+    expect(smallBST.dfsPostOrder()).toEqual([20, 10]);
+  });
+  it("returns an array of values found with DFS Post Order(large)", function () {
+    expect(largeBST.dfsPostOrder()).toEqual([15, 10, 40, 25, 100, 75, 50]);
+  });
+  it("returns an array of values found with DFS Post Order(empty)", function () {
+    expect(emptyBST.dfsPostOrder()).toEqual([]);
+  });
+});
 
 // describe("dfsPostOrderWithHelper", function () {
 //   it("returns an array of values found with DFS Post Order(small)", function () {

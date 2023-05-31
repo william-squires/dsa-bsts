@@ -112,8 +112,23 @@ class BinarySearchTree {
    * Returns the node, if found; else undefined. Uses iteration. */
 
   find(val) {
+    let found;
+    let curr = this.root;
 
+    while(!found) {
+      if (curr.val === val) {
+        found = curr
+      } else if (curr.left && val < curr.val) {
+        curr = curr.left;
+      } else if (curr.right && val > curr.val) {
+        curr = curr.right;
+      } else {
+        break;
+      }
+    }
+    return found;
   }
+
 
   /** findRecursively(val): Search the BST for a node with value val.
    * Returns the node, if found; else undefined. Uses recursion. */

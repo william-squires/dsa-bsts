@@ -208,7 +208,7 @@ class BinarySearchTree {
       vals.push(node.val);
       if (node.left) {
         queue.push(node.left);
-      } 
+      }
       if (node.right) {
         queue.push(node.right);
       }
@@ -220,6 +220,15 @@ class BinarySearchTree {
    * Returns undefined if no successor. */
 
   findSuccessorNode(node) {
+    const curr = this.root;
+    const sought = node.val;
+    let successor;
+
+    while(true) {
+      if (curr.val > sought) {
+
+      }
+    }
 
   }
 

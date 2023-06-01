@@ -443,27 +443,27 @@ describe("bfs", function () {
   });
 });
 
-// describe("findSuccessorNode", function () {
-//   it("finds successor in small tree", function () {
-//     let node = smallBST.find(10);
+describe("findSuccessorNode", function () {
+  it("finds successor in small tree", function () {
+    let node = smallBST.find(10);
 
-//     expect(smallBST.findSuccessorNode(node).val).toEqual(20);
-//   });
+    expect(smallBST.findSuccessorNode(node).val).toEqual(20);
+  });
 
-//   it("finds successor in large tree", function () {
-//     largeBST.insert(60);
-//     largeBST.insert(55);
-//     let node = largeBST.find(50);
+  it("finds successor in large tree", function () {
+    largeBST.insert(60);
+    largeBST.insert(55);
+    let node = largeBST.find(50);
 
-//     expect(largeBST.findSuccessorNode(node).val).toEqual(55);
-//   });
+    expect(largeBST.findSuccessorNode(node).val).toEqual(55);
+  });
 
-//   it("returns undefined if no successor", function () {
-//     let node = smallBST.find(20);
+  it("returns undefined if no successor", function () {
+    let node = smallBST.find(20);
 
-//     expect(smallBST.findSuccessorNode(node)).toEqual(undefined);
-//   });
-// });
+    expect(smallBST.findSuccessorNode(node)).toEqual(undefined);
+  });
+});
 
 // describe("remove", function () {
 //   it("removes a root node with no children", function () {
